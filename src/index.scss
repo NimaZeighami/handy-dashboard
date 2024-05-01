@@ -1,0 +1,14 @@
+// tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Add Font
+* {
+  font-family: "Nunito", sans-serif;
+  /* font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+}
+
+// Global styles
