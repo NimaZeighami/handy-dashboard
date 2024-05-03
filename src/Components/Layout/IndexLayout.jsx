@@ -2,12 +2,14 @@
 
 import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar/Sidebar";
+import Header from './Header/Header'
 
 function Layout() {
   return (
     <div className="layout flex ">
       <Sidebar />
-      <div className="content bg-cyan-400 w-full ">
+      <div className="w-full ">
+        <Header />
         <Outlet />
       </div>
     </div>
