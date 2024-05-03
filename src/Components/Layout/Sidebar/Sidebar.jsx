@@ -18,67 +18,89 @@ function Sidebar() {
   return (
     <div className="flex flex-col  w-1/6 min-w-52 max-w-56 min-h-screen p-4 bg-white border-r-2 border-gray-200">
       <top className="flex h-12 items-center justify-center">
-        <span className="Logo font-bold text-xl text-cyan-400">NimaAdmin</span>
+        <span className="Logo font-extrabold text-xl text-[#6439ff]">
+          NimaAdmin
+        </span>
       </top>
       <hr className="h-px bg-gray-200 border-0 " />
       <middle>
-        <ul className="flex flex-col my-4 items-center gap-4 ">
-          <li>
-            <DashboardIcon />
-            <span>Dashboard</span>
+        <ul className="flex flex-col my-2  gap-2 ">
+          <p className="title text-xs font-extrabold text-gray-400 self-start">
+            MAIN
+          </p>
+          <li className="mx-4 text-lg cursor">
+            <DashboardIcon fontSize="medium" className="text-[#7451f8] mr-2" />
+            <span className="text-gray-500">Dashboard</span>
           </li>
-
-          <li>
-            <PeopleAltOutlinedIcon />
-            <span>Users</span>
+          <p className="title text-xs font-extrabold text-gray-400 self-start">
+            LISTS
+          </p>
+          <li className="mx-4 text-lg cursor">
+            <PeopleAltOutlinedIcon fontSize="medium" className="text-[#7451f8] mr-2" />
+            <span className="text-gray-500">Users</span>
           </li>
-          <li>
-            <StoreIcon />
-            <span>Products</span>
+          <li className="mx-4 text-lg cursor">
+            <StoreIcon fontSize="medium" className="text-[#7451f8] mr-2" />
+            <span className="text-gray-500">Products</span>
           </li>
-          <li>
-            <Inventory2OutlinedIcon />
-            <span>Orders</span>
+          <li className="mx-4 text-lg cursor">
+            <Inventory2OutlinedIcon fontSize="medium" className="text-[#7451f8] mr-2" />
+            <span className="text-gray-500">Orders</span>
           </li>
-          <li>
-            <LocalShippingIcon />
-            <span>Delivery</span>
+          <li className="mx-4 text-lg cursor">
+            <LocalShippingIcon fontSize="medium" className="text-[#7451f8] mr-2" />
+            <span className="text-gray-500">Delivery</span>
           </li>
-          <li>
-            <BarChartIcon />
-            <span>States</span>
+          <p className="title text-xs font-extrabold text-gray-400 self-start">
+            USEFUL
+          </p>
+          <li className="mx-4 text-lg cursor">
+            <BarChartIcon fontSize="medium" className="text-[#7451f8] mr-2" />
+            <span className="text-gray-500">States</span>
           </li>
-          <li>
-            <CampaignOutlinedIcon />
-            <span>Notification </span>
+          <li className="mx-4 text-lg cursor">
+            <CampaignOutlinedIcon fontSize="medium" className="text-[#7451f8] mr-2" />
+            <span className="text-gray-500">Notification </span>
           </li>
-          <li>
-            <FavoriteOutlinedIcon />
-            <span>System Health</span>
+          <p className="title text-xs font-extrabold text-gray-400 self-start">
+            SERVICES
+          </p>
+          <li className="mx-4 text-lg cursor">
+            <FavoriteOutlinedIcon fontSize="medium" className="text-[#7451f8] mr-2" />
+            <span className="text-gray-500">System Health</span>
           </li>
-          <li>
-            <PsychologyIcon />
-            <span>Logs</span>
+          <li className="mx-4 text-lg cursor">
+            <PsychologyIcon fontSize="medium" className="text-[#7451f8] mr-2" />
+            <span className="text-gray-500">Logs</span>
           </li>
-          <li>
-            <SettingsIcon />
-            <span>Settings</span>
+          <li className="mx-4 text-lg cursor">
+            <SettingsIcon fontSize="medium" className="text-[#7451f8]" />
+            <span className="text-gray-500">Settings</span>
           </li>
-          <li>
-            <SwitchAccountIcon />
-            <span>Profiles</span>
+          <p className="title text-xs font-extrabold text-gray-400 self-start">
+            USERS
+          </p>
+          <li className="mx-4 text-lg cursor">
+            <SwitchAccountIcon fontSize="medium" className="text-[#7451f8] mr-2" />
+            <span className="text-gray-500">Profiles</span>
           </li>
-          <li>
-            <LogoutIcon />
-            <span>Log Out</span>
+          <li className="mx-4 text-lg cursor">
+            <LogoutIcon fontSize="medium" className="text-[#7451f8] mr-2" />
+            <span className="text-gray-500">Log Out</span>
           </li>
         </ul>
       </middle>
-      <bottom className='mt-8'>
-
+      <bottom className='mt-2'>
         <FormControlLabel
-          control={<MaterialUISwitch sx={{ m: 0 }}  defaultChecked size="small" />}
+          control={
+            <MaterialUISwitch
+              sx={{ transform: "scale(0.75)", mr: -0.5  }}
+              defaultUnchecked
+              size="medium"
+            />
+          }
           label="Dark Mode"
+          className="text-gray-500 "
         />
       </bottom>
     </div>
