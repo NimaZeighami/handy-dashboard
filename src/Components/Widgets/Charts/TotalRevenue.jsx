@@ -9,13 +9,13 @@ import "react-circular-progressbar/dist/styles.css";
 
 const Total = () => {
   return (
-    <total className="flex flex-col basis-1/3 h-3/4 p-2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-lg">
+    <total className="flex flex-col basis-1/3 min-w-80 h-2/3 p-4 shadow-xl rounded-lg">
       <titlesection className="flex items-center justify-between ">
         <h1 className="text-lg text-gray-400 font-bold">Total Revenue</h1>
         <MoreVertIcon fontSize="small" />
       </titlesection>
           <bottomsection className="flex flex-col items-center justify-center p-5">
-        <totalchart className=" w-44 h-44">
+        <totalchart className="w-40 h-40 my-2">
           <CircularProgressbar
             value={70}
             text={`${70}%`}
@@ -26,33 +26,31 @@ const Total = () => {
             // }}
           />
         </totalchart>
-          <p className="title text-xl text-gray-400 font-medium mt-4 ">
+          <p className="title text-xl text-gray-400 font-medium mt-1">
           Total Sales Made Today
         </p>
-        {/* <totalcontent className="flex flex-col justify-center items-center "> */}
-        <p className="amount text-3xl  my-2">$420</p>
-        <p className="description text-xs text-center font-normal text-gray-400 ">
+        <p className="amount text-3xl my-2">$420</p>
+        <p className="description text-xs text-center font-normal text-gray-400  ">
           Previous transactions processing. Last payments may not be included.
         </p>
-        {/* </totalcontent> */}
-        <summary className="flex w-full items-center justify-between">
+        <summary className="flex w-full items-center justify-between mt-2">
           <summarysection className="text-center">
             <itemtitle className="text-sm text-gray-400">Target</itemtitle>
-            <itemresult className=" ">
+            <itemresult className="flex items-center mt-2 text-sm text-red-800">
               <KeyboardArrowDownIcon fontSize="small" />
-              <div className="resultAmount">$12.4k</div>
+              <resultamount>$12.4k</resultamount>
             </itemresult>
           </summarysection>
-          <summarysection>
-            <div className="itemTitle">Last Week</div>
-            <itemresult className="itemResult positive">
+          <summarysection className="text-center">
+            <itemtitle className="text-sm text-gray-400">Last Week</itemtitle>
+            <itemresult className="flex items-center mt-2 text-sm text-green-800">
               <KeyboardArrowUpOutlinedIcon fontSize="small" />
               <div className="resultAmount">$12.4k</div>
             </itemresult>
           </summarysection>
-          <summarysection>
-            <div className="itemTitle">Last Month</div>
-            <itemresult className="itemResult positive">
+          <summarysection className="text-center">
+            <itemtitle className="text-sm text-gray-400">Last Month</itemtitle>
+            <itemresult className="flex items-center mt-2 text-sm text-red-800">
               <KeyboardArrowUpOutlinedIcon fontSize="small" />
               <div className="resultAmount">$12.4k</div>
             </itemresult>
