@@ -13,7 +13,7 @@ const Home = () => {
         <Widget type="order" />
         <Widget type="user" />
       </widgets>
-      <charts className="flex h-full py-1 px-5 gap-5 mt-2">
+      <charts className="flex h-full py-1 px-5 gap-5 ">
         <Total />
         <Last6Months />
       </charts>
