@@ -13,9 +13,9 @@ const Home = () => {
         <Widget type="order" />
         <Widget type="user" />
       </widgets>
-      <charts className="flex  mt-[-15px] px-5 gap-5 ">
+      <charts className="flex mt-[-15px] px-5 gap-5 ">
         <Total />
-        <Last6Months />
+        <Last6Months title="Last 6 Months (Revenue)" />
       </charts>
     </homecontainer>
   );

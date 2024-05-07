@@ -18,7 +18,7 @@ import SwitchAccountIcon from "@mui/icons-material/SwitchAccount";
 
 function Sidebar() {
   return (
-    <div className="flex flex-col w-1/6 min-w-52 max-w-56  h-screen overflow-auto p-4 bg-white border-r-2 border-gray-200">
+    <div className="flex flex-col w-1/6 min-w-56 max-w-56  h-screen overflow-auto p-4 bg-white border-r-2 border-gray-200">
       <top className="flex h-12 items-center justify-center">
         <span className="Logo font-extrabold text-xl text-blue-700">
           NimaAdmin

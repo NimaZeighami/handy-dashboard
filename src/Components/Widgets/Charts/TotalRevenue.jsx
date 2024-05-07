@@ -10,7 +10,7 @@ import "react-circular-progressbar/dist/styles.css";
 const Total = () => {
   return (
     <total className="flex flex-col basis-1/3 min-w-80 h-2/3 p-4 shadow-xl rounded-lg">
-      <titlesection className="flex items-center justify-between ">
+      <titlesection className="flex items-center justify-between">
         <h1 className="text-lg text-gray-400 font-bold">Total Revenue</h1>
         <MoreVertIcon fontSize="small" />
       </titlesection>
@@ -38,21 +38,21 @@ const Total = () => {
             <itemtitle className="text-sm text-gray-400">Target</itemtitle>
             <itemresult className="flex items-center mt-2 text-sm text-red-800">
               <KeyboardArrowDownIcon fontSize="small" />
-              <resultamount>$12.4k</resultamount>
+              <resultamount>$15.8K</resultamount>
             </itemresult>
           </summarysection>
           <summarysection className="text-center">
             <itemtitle className="text-sm text-gray-400">Last Week</itemtitle>
             <itemresult className="flex items-center mt-2 text-sm text-green-800">
               <KeyboardArrowUpOutlinedIcon fontSize="small" />
-              <div className="resultAmount">$12.4k</div>
+              <div className="resultAmount">$15.8K</div>
             </itemresult>
           </summarysection>
           <summarysection className="text-center">
             <itemtitle className="text-sm text-gray-400">Last Month</itemtitle>
             <itemresult className="flex items-center mt-2 text-sm text-red-800">
               <KeyboardArrowUpOutlinedIcon fontSize="small" />
-              <div className="resultAmount">$12.4k</div>
+              <div className="resultAmount">$13.4K</div>
             </itemresult>
           </summarysection>
         </summary>
