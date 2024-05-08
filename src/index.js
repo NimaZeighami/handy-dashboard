@@ -7,7 +7,7 @@ import Add from "./Pages/Add";
 import Details from "./Pages/Details";
 import ErrorPage from "./Pages/ErrorPage";
 import Home from "./Pages/Home";
-import List from "./Pages/List";
+import Users from "./Pages/Users";
 import Login from "./Pages/Login";
 
 const router = createBrowserRouter([
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
       // Users and Its Children
       {
         path: "users",
-        element: <List />,
+        element: <Users />,
       },
       {
         path: "users/Add",
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
       // Products and Its Children
       {
         path: "products",
-        element: <List />,
+        element: <Users />,
       },
       {
         path: "products/Add",

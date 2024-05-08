@@ -26,7 +26,7 @@ const List = () => {
       product: "Playstation 5",
       img: "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
       customer: "Michael Doe",
-      date: "1 March",
+      date: "3 March",
       amount: 900,
       method: "Online Payment",
       status: "Pending",
@@ -36,7 +36,7 @@ const List = () => {
       product: "Redragon S101",
       img: "https://m.media-amazon.com/images/I/71kr3WAj1FL._AC_UY327_FMwebp_QL65_.jpg",
       customer: "John Smith",
-      date: "1 March",
+      date: "12 March",
       amount: 35,
       method: "Cash on Delivery",
       status: "Pending",
@@ -46,7 +46,7 @@ const List = () => {
       product: "Razer Blade 15",
       img: "https://m.media-amazon.com/images/I/71wF7YDIQkL._AC_UY327_FMwebp_QL65_.jpg",
       customer: "Jane Smith",
-      date: "1 March",
+      date: "16 March",
       amount: 920,
       method: "Online",
       status: "Approved",
@@ -56,13 +56,12 @@ const List = () => {
       product: "ASUS ROG Strix",
       img: "https://m.media-amazon.com/images/I/81hH5vK-MCL._AC_UY327_FMwebp_QL65_.jpg",
       customer: "Harold Carol",
-      date: "1 March",
+      date: "17 March",
       amount: 2000,
       method: "Online",
       status: "Pending",
     },
   ];
-  
 
   return (
     <TableContainer component={Paper} className="table">
@@ -98,7 +97,13 @@ const List = () => {
               <TableCell className="tableCell">{row.method}</TableCell>
               <TableCell className="tableCell">
                 <span
-                  className={(row.status ==="Approved") ?  "bg-green-200 text-green-800 text-sm font-bold p-1 rounded-lg" : (row.status === 'Pending' ? 'bg-yellow-200 text-yellow-800 text-sm font-bold p-1 rounded-lg' : 'bg-gray-100 text-gray-600')}
+                  className={
+                    row.status === "Approved"
+                      ? "bg-green-200 text-green-800 text-sm font-bold p-1 rounded-lg"
+                      : row.status === "Pending"
+                      ? "bg-yellow-200 text-yellow-800 text-sm font-bold p-1 rounded-lg"
+                      : "bg-gray-100 text-gray-600"
+                  }
                 >
                   {row.status}
                 </span>

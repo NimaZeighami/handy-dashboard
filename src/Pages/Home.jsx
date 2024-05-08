@@ -1,7 +1,7 @@
 //* For Better Readability instead of using div with un-meaningful tailwind className I've used 
 //* something that atleast gives a little hint to me about it.
 
-import Table from "../Components/Layout/Table/Table";
+import Table from "../Components/Layout/Tables/BasicTable";
 import Last6Months from "../Components/Widgets/Charts/Last6MonthsRevenue";
 import Total from "../Components/Widgets/Charts/TotalRevenue";
 import Widget from "../Components/Widgets/Widget";
