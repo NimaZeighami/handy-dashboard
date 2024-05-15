@@ -68,7 +68,7 @@ const Widget = ({ type }) => {
   const data = dataMap[type] || {};
 
   return (
-    <widget className="flex flex-1 h-36 justify-between rounded-xl p-4 shadow-lg">
+    <widget className="flex flex-1 h-36 justify-between rounded-xl p-4 dark:mt-[-10px] shadow-lg dark:shadow-md  dark:shadow-white">
       <leftside className="flex flex-col justify-between">
         <span className="title font-extrabold text-base text-gray-400">
           {data.title}

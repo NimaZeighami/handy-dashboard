@@ -9,7 +9,7 @@ import "react-circular-progressbar/dist/styles.css";
 
 const Total = () => {
   return (
-    <total className="flex flex-col basis-1/3 min-w-80 h-2/3 p-4 shadow-xl rounded-lg">
+    <total className="flex flex-col basis-1/3 min-w-80 h-2/3 p-4 shadow-xl dark:shadow-white rounded-lg">
       <titlesection className="flex items-center justify-between">
         <h1 className="text-lg text-gray-400 font-bold">Total Revenue</h1>
         <MoreVertIcon fontSize="small" />

@@ -1,4 +1,4 @@
-import DataTable from "../Components/Layout/Tables/DataTable";
+import DataTable from "../Components/Tables/DataTable";
 
 function Users() {
   return (

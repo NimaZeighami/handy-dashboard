@@ -19,10 +19,10 @@ import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
-    <div className="flex flex-col w-1/6 min-w-56 max-w-56  h-screen overflow-auto p-4 bg-white border-r-2 border-gray-200">
+    <div className="flex flex-col w-1/6 min-w-56 max-w-56  h-screen overflow-auto p-4 bg-white border-r-2 border-gray-200 dark:bg-[#222] dark:text-white">
       <top className="flex h-12 items-center justify-center">
         <span className="Logo font-black text-2xl text-blue-700">
-          NimaAdmin
+          <Link to="/">NimaAdmin</Link>
         </span>
       </top>
       <hr className="h-px bg-gray-200 border-0" />

@@ -64,23 +64,44 @@ const List = () => {
   ];
 
   return (
-    <TableContainer component={Paper} className="table">
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+    <TableContainer component={Paper} className="table ">
+      <Table
+        sx={{ minWidth: 650 }}
+        aria-label="simple table"
+        className="dark:bg-[#222] "
+      >
         <TableHead>
           <TableRow>
-            <TableCell className="tableCell">Tracking ID</TableCell>
-            <TableCell className="tableCell">Product</TableCell>
-            <TableCell className="tableCell">Customer</TableCell>
-            <TableCell className="tableCell">Date</TableCell>
-            <TableCell className="tableCell">Amount</TableCell>
-            <TableCell className="tableCell">Payment Method</TableCell>
-            <TableCell className="tableCell">Status</TableCell>
+            <TableCell className="tableCell">
+              <span className="dark:text-white">Product ID</span>
+            </TableCell>
+            <TableCell className="tableCell">
+              <span className="dark:text-white">Product</span>
+            </TableCell>
+            <TableCell className="tableCell">
+              <span className="dark:text-white">Customer</span>
+            </TableCell>
+            <TableCell className="tableCell">
+              <span className="dark:text-white">Date</span>
+            </TableCell>
+            <TableCell className="tableCell">
+              <span className="dark:text-white">Amount</span>
+            </TableCell>
+
+            <TableCell className="tableCell">
+              <span className="dark:text-white">Payment Method</span>
+            </TableCell>
+            <TableCell className="tableCell">
+              <span className="dark:text-white">Status</span>
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <TableRow key={row.id}>
-              <TableCell className="tableCell">{row.id}</TableCell>
+              <TableCell className="tableCell">
+                <span className="dark:text-white"> {row.id}</span>
+              </TableCell>
               <TableCell className="tableCell">
                 <imagecolumn className="flex items-center">
                   <img
@@ -88,13 +109,21 @@ const List = () => {
                     alt=""
                     className="w-8 h-8 object-cover rounded-full mr-3"
                   />
-                  {row.product}
+                  <span className="dark:text-white">{row.product}</span>
                 </imagecolumn>
               </TableCell>
-              <TableCell className="tableCell">{row.customer}</TableCell>
-              <TableCell className="tableCell">{row.date}</TableCell>
-              <TableCell className="tableCell">{row.amount}</TableCell>
-              <TableCell className="tableCell">{row.method}</TableCell>
+              <TableCell className="tableCell ">
+                <span className="dark:text-white">{row.customer}</span>
+              </TableCell>
+              <TableCell className="tableCell">
+                <span className="dark:text-white">{row.date}</span>
+              </TableCell>
+              <TableCell className="tableCell">
+                <span className="dark:text-white">{row.amount}</span>
+              </TableCell>
+              <TableCell className="tableCell">
+                <span className="dark:text-white">{row.method}</span>
+              </TableCell>
               <TableCell className="tableCell">
                 <span
                   className={

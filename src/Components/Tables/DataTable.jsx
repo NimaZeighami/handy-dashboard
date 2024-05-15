@@ -1,6 +1,7 @@
 //* For Better Readability instead of using div with un-meaningful tailwind className I've used
 //* something that atleast gives a little hint to me about it.
 
+import { ClassNames } from "@emotion/react";
 import { DataGrid } from "@mui/x-data-grid";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -33,6 +34,7 @@ export const userColumns = [
     field: "age",
     headerName: "Age",
     width: 100,
+
   },
   {
     field: "status",
@@ -170,19 +172,19 @@ const DataTable = () => {
     },
   ];
   return (
-    <div className="datatable h-[36.5rem] 4xl:h-[60rem] p-4">
+    <div className="datatable h-[36.5rem] p-4">
       <div className="datatableTitle flex items-center justify-between w-full pb-2 mb-2 border-b-2 border-gray-300">
         <p className="text-base text-gray-500 font-bold">Add New User :</p>
         <Link
-          to="/users/new"
+          to="/users/add"
           className="Link rounded-lg px-2 py-1 border-2 border-green-700 text-sm font-medium cursor-pointer
-           text-green-700 hover:bg-green-700 hover:text-green-100 duration-300"
+           text-green-700 hover:bg-green-700 hover:text-green-100 duration-300 "
         >
           Add New
         </Link>
       </div>
       <DataGrid
-        className="datagrid"
+        className="datagrid  dark:bg-[#222] dark:text-white dark:shadow-lg dark:shadow-gray-400"
         rows={data}
         columns={userColumns.concat(actionColumn)}
         pageSize={9}

@@ -6,9 +6,9 @@ import Sidebar from "./Sidebar/Sidebar";
 
 function Layout() {
   return (
-    <layout className="flex ">
+    <layout className="flex dark:bg-[#222] dark:text-white dark:*:text-white">
       <Sidebar />
-      <div className="w-full h-screen overflow-auto ">
+      <div className="w-full h-screen overflow-auto">
         <Header />
         <Outlet />
       </div>
