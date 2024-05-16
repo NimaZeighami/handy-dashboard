@@ -1,6 +1,7 @@
 {
   "name": "handy-dashboard",
   "version": "0.1.0",
+  "homepage": "https://NimaZeighami.github.io/handy-dashboard/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -12,6 +13,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^6.1.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
     "react": "^18.3.1",
@@ -27,6 +29,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
