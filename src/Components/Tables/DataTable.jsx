@@ -1,15 +1,13 @@
 //* For Better Readability instead of using div with un-meaningful tailwind className I've used
 //* something that atleast gives a little hint to me about it.
 
-import { ClassNames } from "@emotion/react";
 import { DataGrid } from "@mui/x-data-grid";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-
 // temperort
 export const userColumns = [
-  { field: "id", headerName: "ID", width: 70 },
+  { field: "id", headerName: "ID", width: 70 ,},
   {
     field: "user",
     headerName: "User",
@@ -17,9 +15,13 @@ export const userColumns = [
     renderCell: (params) => {
       return (
         <div className="cellWithImg flex items-center justify-start">
-          <img className="cellImg w-8 h-8 rounded-full object-cover mr-5" src={params.row.img} alt="avatar" />
+          <img
+            className="cellImg w-8 h-8 rounded-full object-cover mr-5"
+            src={params.row.img}
+            alt="avatar"
+          />
           {params.row.username}
-          hello
+          
         </div>
       );
     },
@@ -34,7 +36,6 @@ export const userColumns = [
     field: "age",
     headerName: "Age",
     width: 100,
-
   },
   {
     field: "status",
@@ -154,7 +155,10 @@ const DataTable = () => {
       renderCell: (params) => {
         return (
           <div className="cellAction flex items-center mt-2 gap-4">
-            <Link to={`/users/${params.row.id}`} style={{ textDecoration: "none" }}>
+            <Link
+              to={`/users/${params.row.id}`}
+              style={{ textDecoration: "none" }}
+            >
               <div className="text-sm rounded-lg px-2 py-1 border-2 border-blue-500 text-blue-500 hover:bg-blue-600 hover:text-blue-100 duration-300">
                 View
               </div>
@@ -184,12 +188,13 @@ const DataTable = () => {
         </Link>
       </div>
       <DataGrid
-        className="datagrid  dark:bg-[#222] dark:text-white dark:shadow-lg dark:shadow-gray-400"
+        className="datagrid dark:bg-[#222] dark:text-white dark:shadow-lg dark:shadow-gray-400"
         rows={data}
         columns={userColumns.concat(actionColumn)}
         pageSize={9}
         rowsPerPageOptions={[9]}
         checkboxSelection
+        sx={{}}
       />
     </div>
   );

@@ -12,4 +12,8 @@
 }
 
 // Global styles
-
+.dark {
+  .MuiDataGrid-withBorderColor, .MuiDataGrid-filler{
+    background-color: #222;
+  }
+}

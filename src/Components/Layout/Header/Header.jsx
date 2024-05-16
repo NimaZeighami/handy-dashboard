@@ -8,6 +8,8 @@ import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import { ThemeToggler } from "../../../Utils/ThemeUtils/ThemeToggler";
+
 function Header() {
   return (
     <nav
@@ -32,6 +34,7 @@ function Header() {
             <DarkModeOutlinedIcon
               fontSize="medium"
               // onClick={() => dispatch({ type: "TOGGLE" })}
+              onClick={ThemeToggler}
             />
           </item>
           <item className="flex items-center mr-5">

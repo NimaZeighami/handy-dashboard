@@ -4,6 +4,8 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header/Header";
 import Sidebar from "./Sidebar/Sidebar";
 
+
+
 function Layout() {
   return (
     <layout className="flex dark:bg-[#222] dark:text-white dark:*:text-white">
