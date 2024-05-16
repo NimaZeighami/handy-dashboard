@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/handy-dashboard/static/css/main.d0e527b0.css",
-    "main.js": "/handy-dashboard/static/js/main.d6df1b0d.js",
-    "index.html": "/handy-dashboard/index.html",
-    "main.d0e527b0.css.map": "/handy-dashboard/static/css/main.d0e527b0.css.map",
-    "main.d6df1b0d.js.map": "/handy-dashboard/static/js/main.d6df1b0d.js.map"
+    "main.css": "/react-gh-pages/static/css/main.d0e527b0.css",
+    "main.js": "/react-gh-pages/static/js/main.d6df1b0d.js",
+    "index.html": "/react-gh-pages/index.html",
+    "main.d0e527b0.css.map": "/react-gh-pages/static/css/main.d0e527b0.css.map",
+    "main.d6df1b0d.js.map": "/react-gh-pages/static/js/main.d6df1b0d.js.map"
   },
   "entrypoints": [
     "static/css/main.d0e527b0.css",
